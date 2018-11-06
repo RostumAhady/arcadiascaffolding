@@ -505,7 +505,8 @@ a.slide_btn {
     width: auto;
   }
   .showcaseCont h1 {
-    font-size: 50px; }
+    font-size: 50px;
+    font-weight: normal; }
 
   #aboutScroll p {
     width: 90%; }
