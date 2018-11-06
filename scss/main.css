@@ -31,6 +31,7 @@ a {
   font-size: 18px;
   font-family: 'Roboto', sans-serif; }
 
+
 h2 {
   font-size: 40px;
   margin: 0;
@@ -170,6 +171,9 @@ h2:first-child {
     text-align: left;
     margin: 10px auto;
     font-family: 'Roboto', sans-serif; }
+  .lists span {
+    color: #fff;
+  }
 
 .listCont .accessList {
   margin: 0 auto;
@@ -179,7 +183,7 @@ h2:first-child {
     text-align: center;
     margin: 8px 0; }
 
-.listCont .processList a {color: #fff; }
+
 
 .HSList {
   width: 50%;
