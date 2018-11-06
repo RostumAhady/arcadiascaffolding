@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link href="scss/bootstrap.min.css" rel="stylesheet">
-		<link href="/scss/main.css" rel="stylesheet">
+		<link href="scss/main.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 		<title>Arcadia Scaffolding</title>
 </head>
 <body>
 	<header>
-	<nav class="navbar fixed-top navbar-expand-lg">
+		<nav class="navbar fixed-top navbar-expand-lg">
 			<img class="navbar-brand" src="/img/Union.png">
 			<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -20,169 +20,174 @@
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link" data-scroll href="#aboutTitle">About Us</a>
+					<a class="nav-link" data-scroll href="#aboutScroll">About Us</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" data-scroll href="#servicesTitle">Services</a>
+					<a class="nav-link" data-scroll href="#servicesScroll">Services</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" data-scroll href="#processTitle">Process</a>
+					<a class="nav-link" data-scroll href="#processScroll">Process</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" data-scroll href="#HSTitle">Health & Safety</a>
+					<a class="nav-link" data-scroll href="#HSScroll">Health & Safety</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" data-scroll href="#formBackground">Contact</a>
 				</li>
 				</ul>
 			</div>
-			</nav>
-</header>
-<div class="showcaseGrid">
-	<div class="showcaseCont">
-		<h1>Arcadia Scaffolding</h1>
-		<div id="bigB"><a id="quoteButton" class="button" data-scroll href="#formBackground">Get a quote</a></div>
-	</div>
-	<div class="arrow bounce">
-			<a class="fas fa-angle-down fa-4x"  data-scroll href="#aboutTitle"></a>
-	</div>
-</div>
-<div id="aboutTitle" class="cont white">
-<div data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" data-aos-offset="300" class="textCont">
-	<h2>About Us</h2>
-	<p>We are a London based Scaffolding company that provide expert access solutions for Residential properties at competitive prices. We are based in North-West London, but work anywhere and everywhere within the M25. A professional and approachable company, offering high quality, safe services at affordable prices. Simplifying scaffold requirements & providing transparent estimates and effective solutions tailored to you. Free same day quotations available.</p>
-</div>
-</div> 
-<div id="servicesTitle" class="cont black">
-<h2 data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" data-aos-offset="450">Services</h2>
-<div class="servicesGrid" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" data-aos-offset="300" >
-	<div class="servicesGridItem" id="servicesOne">
-		<h3>Scaffolding Design</h3>
-	</div>
-	<div id="dot1" class="dots"></div>
-	<div class="servicesGridItem" id="servicesTwo">
-		<h3>Tower Scaffolding & access towers</h3>
-	</div>
-	<div id="dot2" class="dots"></div>
-	<div class="servicesGridItem" id="servicesThree">
-		<h3>Chimney scaffolding</h3>
-	</div>
-	<div id="dot3" class="dots"></div>
-	<div class="servicesGridItem" id="servicesFour">
-		<h3>Temporary roofs</h3>
-	</div>	
-</div>
-<img class="vector" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" 
-	src="img/Vector.png">
-<h2 id="accessSolutions" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">Access solutions</h2>
-<div data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="listCont">
-	<ul id="accessList" class="lists">
-		<li>Re-roofing</li>
-		<li>Loft conversions</li>
-		<li>Re-decoration</li>
-		<li>Refurbishments</li>
-		<li>Extensions</li>
-		<li>Chimney stacks</li>
-		<li>Guttering Repairs & Maintentance	</li>
-	</ul>
-</div>
-</div>
-<!-- GALLERY STARTS HERE -->
-<div id="galleryCont" class="cont white">
-<h2>Gallery</h2>
-<div class="slider">
-	<div class="slide_viewer">
-		<div class="slide_group">
-		<div class="slide">
-			<img class="image" src="#"/>
+		</nav>
+	</header>
+<!-- SHOWCASE START -->
+	<div class="showcaseGrid">
+		<div class="showcaseCont">
+			<h1>Arcadia Scaffolding</h1>
+			<a class="button" data-scroll href="#formBackground">Get a quote</a>
 		</div>
-		<div class="slide">
-		</div>
-		<div class="slide">
-		</div>
-		<div class="slide">
-		</div>
+		<div class="arrow bounce">
+				<a class="fas fa-angle-down fa-4x"  data-scroll href="#aboutTitle"></a>
 		</div>
 	</div>
-</div>
-<!-- End // .slider -->
-<div class="slide_buttons"></div>
-<div class="directional_nav">
-	<div class="previous_btn" title="Previous">
-		<i class="fas fa-chevron-circle-left"></i>
+<!-- ABOUT START -->
+	<div id="aboutScroll" class="cont white">
+		<div class="textCont" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" data-aos-offset="300">
+			<h2>About Us</h2>
+			<p>We are a London based Scaffolding company that provide expert access solutions for Residential properties at competitive prices. We are based in North-West London, but work anywhere and everywhere within the M25. A professional and approachable company, offering high quality, safe services at affordable prices. Simplifying scaffold requirements & providing transparent estimates and effective solutions tailored to you. Free same day quotations available.</p>
+		</div>
+	</div> 
+<!-- SERVICES START -->
+<div id="servicesScroll" class="cont black">
+	<h2 data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" data-aos-offset="450">Services</h2>
+	<div class="servicesGrid" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" data-aos-offset="300" >
+		<div class="servicesGridItem" id="servicesOne">
+			<h3>Scaffolding Design</h3>
+		</div>
+		<div id="dot1" class="dots"></div>
+		<div class="servicesGridItem" id="servicesTwo">
+			<h3>Tower Scaffolding & access towers</h3>
+		</div>
+		<div id="dot2" class="dots"></div>
+		<div class="servicesGridItem" id="servicesThree">
+			<h3>Chimney scaffolding</h3>
+		</div>
+		<div id="dot3" class="dots"></div>
+		<div class="servicesGridItem" id="servicesFour">
+			<h3>Temporary roofs</h3>
+		</div>	
 	</div>
-	<div class="next_btn" title="Next">
-		<i class="fas fa-chevron-circle-right"></i>
+	<img class="vector" src="img/Vector.png" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
+	<h2 data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">Access solutions</h2>
+	<div data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="listCont">
+		<ul class="lists accessList">
+			<li>Re-roofing</li>
+			<li>Loft conversions</li>
+			<li>Re-decoration</li>
+			<li>Refurbishments</li>
+			<li>Extensions</li>
+			<li>Chimney stacks</li>
+			<li>Guttering Repairs & Maintentance	</li>
+		</ul>
 	</div>
-</div>
-<!-- End // .directional_nav -->
-</div>
+	</div>
+<!-- GALLERY START -->
+	<div class="cont white gallery">
+		<h2>Gallery</h2>
+		<div class="slider">
+			<div class="slide_viewer">
+				<div class="slide_group">
+				<div class="slide">
+					<img class="image" src="#"/>
+				</div>
+				<div class="slide">
+						<img class="image" src="#"/>
+				</div>
+				<div class="slide">
+						<img class="image" src="#"/>
+				</div>
+				<div class="slide">
+						<img class="image" src="#"/>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!-- End // .slider -->
+		<div class="slide_buttons"></div>
+		<div class="directional_nav">
+			<div class="previous_btn" title="Previous">
+				<i class="fas fa-chevron-circle-left"></i>
+			</div>
+			<div class="next_btn" title="Next">
+				<i class="fas fa-chevron-circle-right"></i>
+			</div>
+		</div>
+		<!-- End // .directional_nav -->
+	</div>
 <!-- GALLERY END -->
-<!-- PROCESS SECTION START -->
-<div class="cont black">
-<div data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" data-aos-offset="300" class="textCont">
-	<h2 id="processTitle">Our Process</h2>
-	<p>We will have one of our staff visit the proposed site and discuss the requirements and likely solution with you in detail,
-		giving you assurance and peace of mind across the board from price to quality.
-	</p>
-	<div class="listCont">
-		<ul id="processList" class="lists">
-			<li> <a>Arrange a convenient time to visit the site in question</a></li>
-			<li> <a>Take a full itinerary and stock list of access or health and safety issues</a> </li>
-			<li> <a>Discuss your in depth requirements to ensure we work off the same page</a></li>
-			<li> <a>Present drawing/ sketches of the proposed structure if required</a> </li>
-			<li> <a>Agree Terms and arrange an erection time & date</a></li>
-			<li> <a>Erect the scaffold as agreed, expediently, to get your works underway. Upon completion the Scaffold will be dismantled with the same careful attention to detail as when erected</a> </li>
-		</ul>
-	</div>
-</div>
-</div>
-<!-- PROCESS SECTION END -->
-<div class="cont white">
-<div data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" data-aos-offset="300" class="textCont">
-	<h2 id="HSTitle">Health & Safety</h2>
-	<p>A full health and safety policy is available upon requst.
-		The following list is an overview of our health and safety practices that we use when required:</p>
-	<div class="listCont">
-		<ul class="HSList lists ">
-			<li> <a>Debris netting and plastic cladding</a> </li>
-			<li> <a>Fire retardant scaffold boards</a></li>
-			<li> <a>Handrails and safety barriers</a> </li>
-			<li> <a>Suspended access platforms</a> </li>
-			<li> <a>Foam Protection</a> </li>
-			<li> <a>Insured up to £1,000,000</a> </li>
-		</ul>
-		<div class="downloadCont">
-			<span>Health & Safety doc. (PDF)</span>
-			<!-- pdf below -->
-			<a href="#" download="vector.png" class="button">Download</a>
-			<span>Legal & Insurance doc. (PDF)</span>
-			<!-- pdf below -->
-			<a href="#" download="vector.png" id="whiteBtn" class="button">Download</a>
+<!-- PROCESS START -->
+	<div class="cont black">
+		<div  class="textCont" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" data-aos-offset="300">
+			<h2 id="processScroll">Our Process</h2>
+			<p>We will have one of our staff visit the proposed site and discuss the requirements and likely solution with you in detail,
+				giving you assurance and peace of mind across the board from price to quality.
+			</p>
+			<div class="listCont">
+				<ul class="lists processList">
+					<li> <a>Arrange a convenient time to visit the site in question</a></li>
+					<li> <a>Take a full itinerary and stock list of access or health and safety issues</a> </li>
+					<li> <a>Discuss your in depth requirements to ensure we work off the same page</a></li>
+					<li> <a>Present drawing/ sketches of the proposed structure if required</a> </li>
+					<li> <a>Agree Terms and arrange an erection time & date</a></li>
+					<li> <a>Erect the scaffold as agreed, expediently, to get your works underway. Upon completion the Scaffold will be dismantled with the same careful attention to detail as when erected</a> </li>
+				</ul>
+			</div>
 		</div>
-
 	</div>
-</div>
-</div>
-
-<div id="formBackground">
-	<div class="formCont">
-		<form action="https://formspree.io/rostum_aha@hotmail.co.uk" method="POST" class="form">
-		<h1>Get in touch</h1>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In error ipsum quas. Reiciendis in hic provident aut voluptates numquam itaque.</p>
-		<div class="form-group">
-			<input class="inputField" id="inputName" name="name" type="text" pattern="[A-Za-z]\S.*\S" title="Only letters e.g John Smith" placeholder="Name" required>
-			<input class="inputField" id="inputPhone" name="phone" type="number" placeholder="Phone" required>
-			<input type="hidden" name="_subject" value="New submission on Arcadia Scaffolding!" />
-			<input type="text" name="_gotcha" style="display:none" />
-			<input class="inputField" id="inputEmail" name="_replyto" type="email" placeholder="Your Email" required>
-			<textarea class="messageBox" name="message" type="text" placeholder="Message" required></textarea>
-			<input class="button" type="submit" value="Send" >
+<!-- HEALTH AND SAFETY START -->
+	<div class="cont white">
+		<div class="textCont" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" data-aos-offset="300">
+			<h2 id="HSScroll">Health & Safety</h2>
+			<p>A full health and safety policy is available upon requst.
+				The following list is an overview of our health and safety practices that we use when required:</p>
+			<div class="listCont">
+				<ul class="HSList lists">
+					<li> <a>Debris netting and plastic cladding</a> </li>
+					<li> <a>Fire retardant scaffold boards</a></li>
+					<li> <a>Handrails and safety barriers</a> </li>
+					<li> <a>Suspended access platforms</a> </li>
+					<li> <a>Foam Protection</a> </li>
+					<li> <a>Insured up to £1,000,000</a> </li>
+				</ul>
+				<div class="downloadCont">
+					<span>Health & Safety doc. (PDF)</span>
+					<!-- pdf below -->
+					<a href="#" download="vector.png" class="button">Download</a>
+					<span>Legal & Insurance doc. (PDF)</span>
+					<!-- pdf below -->
+					<a href="#" download="vector.png" id="whiteBtn" class="button">Download</a>
+				</div>
+			</div>
 		</div>
-		</form>
 	</div>
-	</div>
-	<footer class="footer">
+<!-- FORM START -->
+	<div id="formBackground">
+		<div class="formCont">
+			<form action="https://formspree.io/rostum_aha@hotmail.co.uk" method="POST" class="form">
+			<h1>Get in touch</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In error ipsum quas. Reiciendis in hic provident aut voluptates numquam itaque.</p>
+			<div class="form-group">
+				<input class="inputField" id="inputName" name="name" type="text" pattern="[A-Za-z]\S.*\S" title="Only letters e.g John Smith" placeholder="Name" required>
+				<input class="inputField" id="inputPhone" name="phone" type="number" placeholder="Phone" required>
+				<input type="hidden" name="_subject" value="New submission on Arcadia Scaffolding!" />
+				<input type="text" name="_gotcha" style="display:none" />
+				<input class="inputField" id="inputEmail" name="_replyto" type="email" placeholder="Your Email" required>
+				<textarea class="messageBox" name="message" type="text" placeholder="Message" required></textarea>
+				<input class="button" type="submit" value="Send" >
+			</div>
+			</form>
+		</div>
+		</div>
+	<!-- FOOTER START -->
+	<footer class="footer black">
 		<div id="f-Grid1">
 			<h2>Contact details</h2>
 			<p>Email: es.tsivqdnilnergdnul@olleh</p>
@@ -192,7 +197,7 @@
 			<i class="fab fa-facebook-f"></i>
 			<i class="fab fa-instagram"></i>
 		</div>
-</footer>
+	</footer>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>AOS.init();</script>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
