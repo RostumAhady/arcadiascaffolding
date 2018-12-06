@@ -229,7 +229,7 @@ h2:first-child{
 			"servicesFour";
 		}
 		@include tablet{width: 90%;}
-		
+
 		.servicesGridItem{
 			align-self: center;
 			justify-self: center;
@@ -467,7 +467,7 @@ a.slide_btn {
 		.formCont{
 			background-color: $white;
 			border-radius: 15px;
-			width: 100%;
+			width: 70%;
 			grid-area: formCont;
 			margin: 0 auto;
 			h1{

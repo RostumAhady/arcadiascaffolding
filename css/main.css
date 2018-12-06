@@ -360,7 +360,7 @@ a.slide_btn {
   #formBackground .formCont {
     background-color: #fff;
     border-radius: 15px;
-    width: 100%;
+    width: 70%;
     grid-area: formCont;
     margin: 0 auto; }
     #formBackground .formCont h1 {
