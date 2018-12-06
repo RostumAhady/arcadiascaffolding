@@ -205,15 +205,6 @@ h2:first-child{
 	// BOUNCING ARROW END
 }
 
-#aboutScroll{
-	.textCont{
-		@include tablet{
-			p{width: 90%;}
-		}
-	}
-}
-
-
 #servicesScroll{
 	.servicesGrid{
 		margin: 30px auto 30px auto;
@@ -238,6 +229,7 @@ h2:first-child{
 			"servicesFour";
 		}
 		@include tablet{width: 90%;}
+		
 		.servicesGridItem{
 			align-self: center;
 			justify-self: center;
@@ -557,8 +549,7 @@ a.slide_btn {
 		}
 }
 
-.footer{
-    height: 260px;
+.footer{	
     width: 100%;
     background-color: #222932;
     display: grid;
@@ -571,23 +562,28 @@ a.slide_btn {
 #f-Grid1{
     grid-area: f-Grid1;
     margin: 0 auto;
-		width: 40%;
+		width: 60%;
 		@include tablet{width: 90%;}
     p{
         color: $white;
-        margin: 20px auto 0 auto;
+        margin: 10px auto 20px auto;
         display: block;
-        width: 100%;
+				width: 100%;
+				text-align: left;
     }
     h2{
-        text-align: left;
+				padding-top: 40px;
+				color: $white;
+				text-align: left;
     }
 }
 #f-Grid2{
-    grid-area: f-Grid2;
+		grid-area: f-Grid2;
+		width: max-content;
     color: $white;
     font-size: 32px;
-    padding-top: 120px;
+		align-self: center;
+		justify-self: start;
 		margin-left: 0;
 		@include tablet{padding-top: 60px;}
     .fab{
