@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<link href="scss/bootstrap.min.css" rel="stylesheet">
-		<link href="scss/main.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 		<title>Arcadia Scaffolding</title>
@@ -50,8 +50,8 @@
 	</div>
 <!-- ABOUT START -->
 	<div id="aboutScroll" class="cont white">
+		<h2>About Us</h2>
 		<div class="textCont" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
-			<h2>About Us</h2>
 			<p>We are a London based Scaffolding company that provide expert access solutions for Residential properties at competitive prices. We are based in North-West London, but work anywhere and everywhere within the M25. A professional and approachable company, offering high quality, safe services at affordable prices. Simplifying scaffold requirements & providing transparent estimates and effective solutions tailored to you. Free same day quotations available.</p>
 		</div>
 	</div> 
@@ -77,8 +77,8 @@
 	</div>
 	<img class="vector" src="img/Vector.png" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
 	<h2 data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">Access solutions</h2>
-	<div data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="listCont">
-		<ul class="lists accessList">
+	<div class="listCont"data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
+		<ul class="lists">
 			<li>Re-roofing</li>
 			<li>Loft conversions</li>
 			<li>Re-decoration</li>
@@ -95,18 +95,18 @@
 		<div class="slider">
 			<div class="slide_viewer">
 				<div class="slide_group">
-				<div class="slide">
-					<img class="image" src="img/scaffolding1.jpeg"/>
-				</div>
-				<div class="slide">
-						<img class="image" src="img/scaffolding2.jpeg"/>
-				</div>
-				<div class="slide">
-						<img class="image" src="img/scaffolding3.jpeg"/>
-				</div>
-				<div class="slide">
-						<img class="image" src="img/scaffolding4.jpeg"/>
-				</div>
+					<div class="slide">
+						<img class="image" src="img/scaffolding1.jpeg"/>
+					</div>
+					<div class="slide">
+							<img class="image" src="img/scaffolding2.jpeg"/>
+					</div>
+					<div class="slide">
+							<img class="image" src="img/scaffolding3.jpeg"/>
+					</div>
+					<div class="slide">
+							<img class="image" src="img/scaffolding4.jpeg"/>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -131,7 +131,7 @@
 				giving you assurance and peace of mind across the board from price to quality.
 			</p>
 			<div class="listCont">
-				<ul class="lists processList">
+				<ul class="lists">
 					<li> <span>Arrange a convenient time to visit the site in question</span></li>
 					<li> <span>Take a full itinerary and stock list of access or health and safety issues</span></li>
 					<li> <span>Discuss your in depth requirements to ensure we work off the same page</span></li>
@@ -149,15 +149,16 @@
 			<p>A full health and safety policy is available upon requst.
 				The following list is an overview of our health and safety practices that we use when required:</p>
 			<div class="listCont">
-				<ul class="HSList lists">
-					<li> <a>Debris netting and plastic cladding</a> </li>
-					<li> <a>Fire retardant scaffold boards</a></li>
-					<li> <a>Handrails and safety barriers</a> </li>
-					<li> <a>Suspended access platforms</a> </li>
-					<li> <a>Foam Protection</a> </li>
-					<li> <a>Insured up to £1,000,000</a> </li>
+				<ul class="lists">
+					<li> <span>Debris netting and plastic cladding</span></li>
+					<li> <span>Fire retardant scaffold boards</span></li>
+					<li> <span>Handrails and safety barriers</span> </li>
+					<li> <span>Suspended access platforms</span> </li>
+					<li> <span>Foam Protection</span></li>
+					<li> <span>Insured up to £1,000,000</span> </li>
 				</ul>
-				<div class="downloadCont">
+			</div>
+			<div class="downloadCont">
 					<span>Health & Safety doc. (PDF)</span>
 					<!-- pdf below -->
 					<a href="#" download="vector.png" class="button">Download</a>
@@ -165,29 +166,28 @@
 					<!-- pdf below -->
 					<a href="#" download="vector.png" id="whiteBtn" class="button">Download</a>
 				</div>
-			</div>
 		</div>
 	</div>
 <!-- FORM START -->
 	<div id="formBackground">
 		<div class="formCont">
 			<form action="https://formspree.io/rostum_aha@hotmail.co.uk" method="POST" class="form">
-			<h1>Get in touch</h1>
-			<p>This form is disabled for the HTML version.</p>
-			<div class="form-group">
-				<input class="inputField" id="inputName" name="name" type="text" pattern="[A-Za-z]\S.*\S" title="Only letters e.g John Smith" placeholder="Name" required>
-				<input class="inputField" id="inputPhone" name="phone" type="number" placeholder="Phone" required>
-				<input type="hidden" name="_subject" value="New submission on Arcadia Scaffolding!" />
-				<input type="text" name="_gotcha" style="display:none" />
-				<input class="inputField" id="inputEmail" name="_replyto" type="email" placeholder="Your Email" required>
-				<textarea class="messageBox" name="message" type="text" placeholder="Message" disabled required></textarea>
-				<input class="button" type="submit" value="Send" disabled>
-			</div>
+				<h2>Get in touch</h2>
+				<p>This form is disabled for the HTML version.</p>
+				<div class="form-group">
+					<input class="inputField" id="inputName" name="name" type="text" pattern="[A-Za-z]\S.*\S" title="Only letters e.g John Smith" placeholder="Name" required>
+					<input class="inputField" id="inputPhone" name="phone" type="number" placeholder="Phone" required>
+					<input type="hidden" name="_subject" value="New submission on Arcadia Scaffolding!" />
+					<input type="text" name="_gotcha" style="display:none" />
+					<input class="inputField" id="inputEmail" name="_replyto" type="email" placeholder="Your Email" required>
+					<textarea class="messageBox" name="message" type="text" placeholder="Message" disabled required></textarea>
+					<input class="button" type="submit" value="Send" disabled>
+				</div>
 			</form>
 		</div>
 		</div>
 	<!-- FOOTER START -->
-	<footer class="footer black">
+	<footer class="footer">
 		<div id="f-Grid1">
 			<h2>Contact details</h2>
 			<p>Email: es.tsivqdnilnergdnul@olleh</p>
