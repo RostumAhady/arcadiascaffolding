@@ -86,7 +86,7 @@ h2:first-child{
 
 /* Header End */
 
-/* Showcase Start */
+// containers
 
 .white{
 	min-height: 450px;
@@ -114,6 +114,10 @@ h2:first-child{
 	text-align: center;
 }
 
+.listCont{
+	margin: 40px auto 120px auto;
+}
+
 .textCont{
 	margin: 0 auto;
 	width: 60%; 
@@ -128,7 +132,7 @@ h2:first-child{
 	}
 
 }
-
+/* Showcase Start */
 .showcaseGrid{
 	width: 100%;
 	height: 90vh;
@@ -151,7 +155,7 @@ h2:first-child{
 		"showcaseCont showcaseCont showcaseCont"
 		". . .";
 	}
-	.showcaseCont{
+	.cont{
 		grid-area: showcaseCont;
 		text-align: center;
 		display: flex;
@@ -159,7 +163,7 @@ h2:first-child{
 		align-content:center;
 		flex-direction:column; /* column | row */
 		h1{
-			font-size: 82px;
+			font-size: 62px;
 			color: $white;
 			font-weight: bolder;
 			@include mobile{font-size: 50px;}
@@ -174,84 +178,38 @@ h2:first-child{
 			}
 		}
 	}
-	.arrow {
-		grid-area: arrow;
-		text-align: center;
-		margin: 8% 0;
-		a{
-				color: $white;
-				text-decoration: none;
-		}
-		@include tablet{display: none;}	
-	}
-	
-	// BOUNCING ARROW START
-	.bounce {
-		-moz-animation: bounce 2s infinite;
-		-webkit-animation: bounce 2s infinite;
-		animation: bounce 2s infinite;
-	}
-	@keyframes bounce {
-		0%, 20%, 50%, 80%, 100% {
-			transform: translateY(0);
-		}
-		40% {
-			transform: translateY(-30px);
-		}
-		60% {
-			transform: translateY(-15px);
-		}
-	}
-	// BOUNCING ARROW END
 }
 
-#servicesScroll{
-	.servicesGrid{
-		margin: 30px auto 30px auto;
-		display: grid;
-		width: 860px;
-		color: $white;
-		text-align: center;
-		grid-template-columns: 20% 6.66% 20% 6.66% 20% 6.66% 20% ;
-		grid-template-areas: 
-		"servicesOne dot1 servicesTwo dot2 servicesThree dot3 servicesFour";
-		@include mobile{
-			height: 300px;
-			grid-template-columns: 100%;
-			grid-template-rows: 20% 6.66% 20% 6.66% 20% 6.66% 20%;
-			grid-template-areas: 
-			"servicesOne"
-			"dot1" 
-			"servicesTwo" 
-			"dot2" 
-			"servicesThree" 
-			"dot3" 
-			"servicesFour";
-		}
-		@include tablet{width: 90%;}
-
-		.servicesGridItem{
-			align-self: center;
-			justify-self: center;
-			h3{
-				font-weight: normal !important; 
-				font-size: $paragraph;
-				margin: 0;
-			}
-		}
-		.dots{
-			justify-self: center;
-			align-self: center;
-			background: #56CBF1 no-repeat center center; 
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-			width: 10px;
-			height: 10px;
-			border-radius: 50%;
-		}
+.arrow {
+	grid-area: arrow;
+	text-align: center;
+	margin: 8% 0;
+	a{
+			color: $white;
+			text-decoration: none;
 	}
+	@include tablet{display: none;}	
+}
+
+// BOUNCING ARROW START
+.bounce {
+	-moz-animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-30px);
+	}
+	60% {
+		transform: translateY(-15px);
+	}
+}	// BOUNCING ARROW END
+
+#servicesScroll{
 	.listCont{	
 		.lists{
 			margin: 0 auto;
@@ -265,9 +223,51 @@ h2:first-child{
 		}
 	}
 }
+.servicesGrid{
+	margin: 30px auto 30px auto;
+	display: grid;
+	width: 860px;
+	color: $white;
+	text-align: center;
+	grid-template-columns: 20% 6.66% 20% 6.66% 20% 6.66% 20% ;
+	grid-template-areas: 
+	"servicesOne dot1 servicesTwo dot2 servicesThree dot3 servicesFour";
+	@include mobile{
+		height: 300px;
+		grid-template-columns: 100%;
+		grid-template-rows: 20% 6.66% 20% 6.66% 20% 6.66% 20%;
+		grid-template-areas: 
+		"servicesOne"
+		"dot1" 
+		"servicesTwo" 
+		"dot2" 
+		"servicesThree" 
+		"dot3" 
+		"servicesFour";
+	}
+	@include tablet{width: 90%;}
 
-.listCont{
-	margin: 40px auto 120px auto;
+	.servicesGridItem{
+		align-self: center;
+		justify-self: center;
+		h3{
+			font-weight: normal !important; 
+			font-size: $paragraph;
+			margin: 0;
+		}
+	}
+	.dots{
+		justify-self: center;
+		align-self: center;
+		background: #56CBF1 no-repeat center center; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+	}
 }
 
 #servicesOne{grid-area: servicesOne;}
@@ -283,18 +283,6 @@ h2:first-child{
 	margin: 60px auto 40px auto;
 }
 
-.lists{
-	list-style-position: outside;
-	padding: 0;
-	list-style-type: disc;
-	li{
-		color: #56CCF2;
-		text-align: left;
-		margin: 0;
-		font-family: $roboto;
-		font-size: 24px;
-	}
-}
 /* GALLERY STYLING */
 .gallery{
 	height: 700px;
@@ -390,6 +378,19 @@ a.slide_btn {
 }
 //gallery JS classes END
 
+.lists{
+	list-style-position: outside;
+	padding: 0;
+	list-style-type: disc;
+	li{
+		color: #56CCF2;
+		text-align: left;
+		margin: 0;
+		font-family: $roboto;
+		font-size: 24px;
+	}
+}
+
 #processScroll{
 	.textCont{
 		.listCont{
@@ -404,6 +405,7 @@ a.slide_btn {
 		}
 	}
 }
+
 #HSScroll{
 	.textCont{
 		.listCont{
@@ -425,7 +427,7 @@ a.slide_btn {
 				}
 			}
 		}
-		.downloadCont{
+		.cont{
 			width: 50%;
 			display: inline-block;
 			@include mobile{
@@ -464,7 +466,7 @@ a.slide_btn {
         "formCont formCont formCont";
         background: none;
 		}
-		.formCont{
+		.cont{
 			background-color: $white;
 			border-radius: 15px;
 			width: 70%;
@@ -479,49 +481,50 @@ a.slide_btn {
 					margin-bottom: 4em;
 					font-size: $paragraph;
 			}
-			.form{
-				width: 90%;
-				margin: 0 auto;
-				font-family: 'Roboto Condensed', sans-serif;
-				p{
-					margin-bottom: 30px;
-					width: 100%;
-					text-align: left;
-				}
-				.inputField{
-					display: block;
-					border: #828282 solid 2px;
-					border-radius: 3px;
-					font-size: $paragraph;
-					height: 70px;
-					width: 47%;
-					margin: 1em 0 1em 0;
-					line-height: normal;
-					padding: 8px 12px;
-					@include mobile{
-						display: block;
-						width: 100%;
-						float: none;
-					}
-				}   
-				#inputPhone{display: inline-block;}
-				#inputEmail{float: right;}
-				.messageBox{
-					border: #828282 solid 2px;
-					border-radius: 3px;
-					margin: 1em 0 1em 0;
-					width: 100%;
-					height: 150px;
-					resize: none;
-					padding: 8px 12px;
-					font-size: $paragraph;
-				}
-				.button{
-					@include mobile{width: 100%};
-				}
-
 		}
+}
+
+.form{
+	width: 90%;
+	margin: 0 auto;
+	font-family: 'Roboto Condensed', sans-serif;
+	p{
+		margin-bottom: 30px;
+		width: 100%;
+		text-align: left;
 	}
+	.button{
+		@include mobile{width: 100%};
+	}
+
+}
+.inputField{
+	display: block;
+	border: #828282 solid 2px;
+	border-radius: 3px;
+	font-size: $paragraph;
+	height: 70px;
+	width: 47%;
+	margin: 1em 0 1em 0;
+	line-height: normal;
+	padding: 8px 12px;
+	@include mobile{
+		display: block;
+		width: 100%;
+		float: none;
+	}
+} 
+#inputPhone{display: inline-block;}
+#inputEmail{float: right;}
+.messageBox{
+border: #828282 solid 2px;
+border-radius: 3px;
+margin: 1em 0 1em 0;
+width: 100%;
+height: 150px;
+resize: none;
+padding: 8px 12px;
+font-size: $paragraph;
 }
 // Buttons //
 
