@@ -469,7 +469,7 @@ a.slide_btn {
 		.cont{
 			background-color: $white;
 			border-radius: 15px;
-			width: 50%;
+			width: 60%;
 			grid-area: formCont;
 			margin: 0 auto;
 			@include mobile{
@@ -517,7 +517,7 @@ a.slide_btn {
 		float: none;
 	}
 } 
-#inputPhone{display: inline-block;}
+#inputPhone{float: left;}
 #inputEmail{float: right;}
 .messageBox{
 border: #828282 solid 2px;

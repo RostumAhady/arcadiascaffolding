@@ -364,7 +364,7 @@ a.slide_btn {
   #formBackground .cont {
     background-color: #fff;
     border-radius: 15px;
-    width: 50%;
+    width: 60%;
     grid-area: formCont;
     margin: 0 auto; }
     @media (max-width: 768px) {
@@ -407,7 +407,7 @@ a.slide_btn {
       float: none; } }
 
 #inputPhone {
-  display: inline-block; }
+  float: left; }
 
 #inputEmail {
   float: right; }
