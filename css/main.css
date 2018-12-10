@@ -364,9 +364,12 @@ a.slide_btn {
   #formBackground .cont {
     background-color: #fff;
     border-radius: 15px;
-    width: 70%;
+    width: 50%;
     grid-area: formCont;
     margin: 0 auto; }
+    @media (max-width: 768px) {
+      #formBackground .cont {
+        width: 90%; } }
     #formBackground .cont h1 {
       margin-top: 50px; }
     #formBackground .cont p {
